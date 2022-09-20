@@ -73,13 +73,3 @@
     text-decoration: none;
 
 }
-
-.grid-container-almacen{
-    display: grid;
-    grid-template-columns: 20% 20% 20% 20%;
-    gap: 3%;
-    background-color: #D5F5E3;
-    padding: 2%;
-    align-content: center;
-    justify-content: center;
-}
