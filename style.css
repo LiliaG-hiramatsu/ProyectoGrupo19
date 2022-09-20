@@ -1,0 +1,85 @@
+.navbar{
+    width: 100%;
+    background-color: black;
+    position: fixed;
+}
+
+@media only screen and (min-width: 400px) {
+    
+}
+
+.navbar ul li{
+    float: right;
+}
+
+.navbar ul li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 0.7em 1em;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 15px;
+}
+
+.navbar ul li a:hover {
+    background-color: #111;
+}
+
+.logo{
+    width: 3%;
+    height: auto;
+    float: left;
+    margin: 12px 7px;
+    vertical-align: middle;
+}
+
+.portada{
+    display: flex;
+}
+
+.portada img{
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    background-repeat: no-repeat;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 20% 20% 20%;
+    gap: 3%;
+    background-color: #D5F5E3;
+    padding: 2%;
+    align-content: center;
+    justify-content: center;
+}
+
+.caja{
+    background-color: #58D68D;
+    border: 2px solid black;
+    padding: 3%;
+    text-align: center;
+}
+
+.caja:hover{
+    background-color: #28B463;
+}
+
+.caja a{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    text-decoration: none;
+
+}
+
+.grid-container-almacen{
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    gap: 3%;
+    background-color: #D5F5E3;
+    padding: 2%;
+    align-content: center;
+    justify-content: center;
+}
