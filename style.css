@@ -2,6 +2,7 @@
     width: 100%;
     background-color: black;
     position: fixed;
+    top: 0px;
 }
 
 @media only screen and (min-width: 400px) {
@@ -45,13 +46,22 @@
     background-repeat: no-repeat;
 }
 
+main{
+    margin-top: 5%;
+    background-color: #D5F5E3;
+}
+
+.encabezado{
+    display: grid;
+    grid-template-columns: auto;
+    padding: 4px;
+}
+
 .grid-container{
     display: grid;
-    grid-template-columns: 20% 20% 20%;
+    grid-template-columns: 30% 30% 30%;
     gap: 3%;
-    background-color: #D5F5E3;
     padding: 2%;
-    align-content: center;
     justify-content: center;
 }
 
