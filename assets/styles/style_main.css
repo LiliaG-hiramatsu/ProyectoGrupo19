@@ -1,0 +1,47 @@
+/*Configuracion del banner animado con HTML y CSS automatico (Slider)*/
+.banner_slider{
+    width: 100%;
+    /*margin: auto;*/
+    overflow: hidden;
+}
+
+.banner_slider ul{
+    padding: 0;
+    display: flex;
+    width: 400%;
+    /*Configuramos la animacion dentro del ul*/
+    animation: cambio 20s infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-in;
+    /*Fin de configuracion de la animacion*/
+}
+
+.banner_slider li{
+    list-style: none;
+    width: 100%;
+}
+
+.banner_slider img{
+    width: 100%;
+}
+
+/*Configuracion de las paradas de cambio con los @keyframes*/
+@keyframes cambio{
+    0%{margin-left: 0;}
+    20%{margin-left: 0;}
+
+    25%{margin-left: -100%;}
+    45%{margin-left: -100%;}
+
+    50%{margin-left: -200%;}
+    70%{margin-left: -200%;}
+
+    75%{margin-left: -300%;}
+    100%{margin-left: -300%;}
+}
+/*Fin de la configuracion de las paradas*/
+
+/*Fin de la configuracion del banner animado*/
+
+
+
