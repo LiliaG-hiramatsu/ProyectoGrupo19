@@ -43,5 +43,84 @@
 
 /*Fin de la configuracion del banner animado*/
 
+/*Configuracion de destacados*/
+.destacados{
+    /*background-color: brown;*/
+    padding: 0px 10%;
+    overflow: hidden;
+    margin-top: 0.5em;
+    
+}
+
+.destacados ul{
+    padding: 0;
+    display: flex;
+    width: 100%;
+    /*-color: aqua;*/
+    margin: auto;
+
+}
+
+.destacados li{
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    background-color:#eceff1;
+    margin: 0.5em;
+    border-radius: 10%;
+}
+
+.destacados img{
+    margin-top: 0.5em;
+    width: 25%;
+}
+
+.destacados h3{
+    font-size: 1rem;
+    margin: 0.2em auto;
+}
+
+.destacados p{
+    font-size: 0.8rem;
+    margin-bottom: 0.9em;
+}
+
+/*Fin de configuracion de destacados*/
 
 
+
+
+
+/*Configuracion responsive*/
+/*Tablet o monitores viejos*/
+@media only screen and (max-width: 900px){
+    .destacados img{
+        width: 35%;
+    }
+}
+
+
+/*Celulares Grandes*/
+@media only screen and (max-width: 520px){
+    .destacados img{
+        width: 45%;
+    }
+}
+
+/*Celulares Chicos*/
+@media only screen and (max-width: 345px){
+    .destacados ul{
+        display: block;
+    }
+
+    .destacados img{
+        width: 30%;
+    }
+
+    .destacados p{
+        padding-bottom: 0.9em;
+    }
+
+}
+
+/*Fin de configuracion responsive*/

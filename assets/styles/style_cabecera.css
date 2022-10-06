@@ -72,3 +72,48 @@
 }
 
 /*Fin configuracion boton*/
+
+
+/*Configuracion responsive*/
+/*Tablet o monitores viejos*/
+@media only screen and (max-width: 900px){
+    .header{
+        display:block;
+        height: 200px;
+        align-items: center;
+        text-align: center;
+
+    }
+
+    .header .logo img{
+        align-items: center;
+        margin: 0.2em 0px;
+    }
+
+    .header .nav_links li{
+        margin: 0.1em 0px;
+    }
+
+    .header .btn_contacto button{
+        margin: 0.1em 0px;
+    }
+}
+
+/*Celulares Grandes*/
+@media only screen and (max-width: 520px){
+    .header{
+        height: 230px;
+    }
+
+    .header .btn_contacto button{
+        margin-left: 0;
+}
+
+/*Celulares Chicos*/
+@media only screen and (max-width: 345px){
+    .header{
+        height: 250px;
+    }
+}
+
+/*Fin de configuracion responsive*/
