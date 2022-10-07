@@ -1,3 +1,4 @@
+/*---------------------Banner Inicio ------------------------------*/
 /*Configuracion del banner animado con HTML y CSS automatico (Slider)*/
 .banner_slider{
     width: 100%;
@@ -40,11 +41,12 @@
     100%{margin-left: -300%;}
 }
 /*Fin de la configuracion de las paradas*/
-
 /*Fin de la configuracion del banner animado*/
+/*---------------------Banner Fin ------------------------------*/
 
-/*Configuracion de destacados*/
-.destacados{
+/*--------------------- Servicios Inicio ------------------------------*/
+/*Configuracion de servicios*/
+.servicios{
     /*background-color: brown;*/
     padding: 0px 10%;
     overflow: hidden;
@@ -52,7 +54,7 @@
     
 }
 
-.destacados ul{
+.servicios ul{
     padding: 0;
     display: flex;
     width: 100%;
@@ -61,66 +63,173 @@
 
 }
 
-.destacados li{
+.servicios li{
     list-style: none;
     width: 100%;
     text-align: center;
     background-color:#eceff1;
     margin: 0.5em;
-    border-radius: 10%;
+    border-radius: 5%;
 }
 
-.destacados img{
+.servicios img{
     margin-top: 0.5em;
     width: 25%;
 }
 
-.destacados h3{
+.servicios h3{
     font-size: 1rem;
     margin: 0.2em auto;
 }
 
-.destacados p{
+.servicios p{
     font-size: 0.8rem;
     margin-bottom: 0.9em;
 }
+/*Fin de configuracion de servicios*/
+/*--------------------- Servicios Fin ------------------------------*/
 
-/*Fin de configuracion de destacados*/
+/*--------------------- Ofertas Inicio ------------------------------*/
+/*Configuracion de ofertas*/
+.ofertas{
+    background-color: lightgoldenrodyellow;
+    padding: 0px 10%;
+    overflow: hidden;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+}
+
+.ofertas .titulo{
+    font-size: 1.5em;
+    color: rgb(97, 96, 96);
+    padding: 10px 2.5%;
+}
+
+.ofertas .ofertas_items{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: auto;
+}
+
+
+.ofertas .ofertas_items li{
+    list-style: none;
+    width: 25%;
+    text-align: center;
+    background-color: #eceff1;
+    margin: 0.5em 0.5em 1em 0.5em;
+    border-radius: 5%;
+    
+}
+
+.ofertas .ofertas_items li:hover{
+    transform: scale(1.1);
+    background-color:#ffca4494; 
+}
+
+.ofertas .ofertas_items img{
+    width: 65%;
+    margin-top: 0.5em;
+}
+
+.ofertas .ofertas_items h3{
+    font-size: 1rem;
+    color: darkgreen;
+}
+
+
+.ofertas .ofertas_items h2{
+    font-size: 1.5rem;
+    color: red;
+    margin: 0.5em auto;
+}
+
+
+.ofertas .ofertas_items p{
+    font-size: 0.7rem;
+    margin-bottom: 0.5em;
+}
+/*Fin de configuracion de ofertas*/
+/*--------------------- Ofertas Fin ------------------------------*/
+
+/*--------------------- Novedades Inicio ------------------------------*/
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*--------------------- Novedades Fin ------------------------------*/
+
+/*--------------------- Responsive Inicio ------------------------------*/
 
 /*Configuracion responsive*/
 /*Tablet o monitores viejos*/
 @media only screen and (max-width: 900px){
-    .destacados img{
+    .servicios img{
         width: 35%;
+    }
+
+    .ofertas .ofertas_items{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ofertas .ofertas_items li{
+        width: 30%;        
+    }
+}
+
+
+/*Tablet chicas*/
+@media only screen and (max-width: 800px){
+
+    .ofertas .ofertas_items li{
+        width: 35%; 
     }
 }
 
 
 /*Celulares Grandes*/
 @media only screen and (max-width: 520px){
-    .destacados img{
+    .servicios img{
         width: 45%;
     }
+
+    .ofertas .ofertas_items li{
+        width: 80%; 
+    }
+
 }
 
 /*Celulares Chicos*/
 @media only screen and (max-width: 345px){
-    .destacados ul{
+    .servicios ul{
         display: block;
     }
 
-    .destacados img{
+    .servicios img{
         width: 30%;
     }
 
-    .destacados p{
+    .servicios p{
         padding-bottom: 0.9em;
     }
 
 }
 
 /*Fin de configuracion responsive*/
+/*--------------------- Responsive Inicio ------------------------------*/
