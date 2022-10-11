@@ -1,0 +1,104 @@
+footer{
+    background:#1b3039;
+    padding: 0px 10%;
+}
+
+footer .lista_opciones{
+    /*background-color: aqua;*/
+    display: flex;  
+    width: 100%; 
+
+
+}
+
+footer .lista_opciones h3{
+    color:#eceff1;
+    font-size: 1rem;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+footer .lista_opciones ul{
+    /*background: blue;*/
+    padding: 0;
+    align-content: space-between;
+    width: 35%;
+    
+}
+
+footer .lista_opciones li{
+    list-style: none;
+    text-align: center;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+footer .lista_opciones p{
+    color: #eceff1;
+    font-size: 0.8rem;
+    margin-bottom: 0.5em;
+}
+
+footer .lista_opciones a{
+    color:#eceff1;
+    text-decoration: none;
+    font-size: 0.8rem;
+    padding: 0.5rem;
+
+}
+
+footer .lista_opciones img{
+    width: 08%;
+    margin: 0.3em;
+    
+}
+
+footer .copyright{
+    color: #eceff1;
+    text-align: center;
+}
+
+footer .copyright p{
+    font-size: 0.6rem;
+    padding: 0.5em ;
+}
+
+
+
+/*--------------------- Responsive Inicio ------------------------------*/
+
+/*Configuracion responsive*/
+/*Tablet o monitores viejos*/
+@media only screen and (max-width: 900px){
+    footer .lista_opciones{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    footer .lista_opciones ul{
+        width: 50%;
+    }
+
+/*Tablet chicas*/
+@media only screen and (max-width: 800px){
+    footer .lista_opciones ul{
+        width: 50%;
+    }
+
+/*Celulares Grandes*/
+@media only screen and (max-width: 600px){
+    footer .lista_opciones ul{
+        width: 60%;
+    }
+
+/*Celulares Chicos*/
+@media only screen and (max-width: 345px){
+
+}
+
+
+/*Fin de configuracion responsive*/
+/*--------------------- Responsive Inicio ------------------------------*/

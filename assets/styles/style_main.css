@@ -89,9 +89,9 @@
 /*Fin de configuracion de servicios*/
 /*--------------------- Servicios Fin ------------------------------*/
 
-/*--------------------- Ofertas Inicio ------------------------------*/
+/*--------------- Ofertas y Novedades Inicio -----------------------*/
 /*Configuracion de ofertas*/
-.ofertas{
+.productos{
     background-color: lightgoldenrodyellow;
     padding: 0px 10%;
     overflow: hidden;
@@ -99,13 +99,13 @@
     margin-bottom: 1em;
 }
 
-.ofertas .titulo{
+.productos .titulo{
     font-size: 1.5em;
     color: rgb(97, 96, 96);
     padding: 10px 2.5%;
 }
 
-.ofertas .ofertas_items{
+.productos .items{
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -113,7 +113,7 @@
 }
 
 
-.ofertas .ofertas_items li{
+.productos .items li{
     list-style: none;
     width: 25%;
     text-align: center;
@@ -123,56 +123,36 @@
     
 }
 
-.ofertas .ofertas_items li:hover{
+.productos .items li:hover{
     transform: scale(1.1);
     background-color:#ffca4494; 
 }
 
-.ofertas .ofertas_items img{
-    width: 65%;
+.productos .items img{
+    width: 80%;
     margin-top: 0.5em;
 }
 
-.ofertas .ofertas_items h3{
+.productos .items h3{
     font-size: 1rem;
     color: darkgreen;
 }
 
 
-.ofertas .ofertas_items h2{
+.productos .items h2{
     font-size: 1.5rem;
     color: red;
     margin: 0.5em auto;
 }
 
 
-.ofertas .ofertas_items p{
+.productos .items p{
     font-size: 0.7rem;
     margin-bottom: 0.5em;
 }
 /*Fin de configuracion de ofertas*/
-/*--------------------- Ofertas Fin ------------------------------*/
+/*------------------- Ofertas y Novedades Fin --------------------------*/
 
-/*--------------------- Novedades Inicio ------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*--------------------- Novedades Fin ------------------------------*/
 
 /*--------------------- Responsive Inicio ------------------------------*/
 
@@ -183,12 +163,12 @@
         width: 35%;
     }
 
-    .ofertas .ofertas_items{
+    .productos .items{
         flex-wrap: wrap;
         justify-content: center;
     }
 
-    .ofertas .ofertas_items li{
+    .productos .items li{
         width: 30%;        
     }
 }
@@ -197,7 +177,7 @@
 /*Tablet chicas*/
 @media only screen and (max-width: 800px){
 
-    .ofertas .ofertas_items li{
+    .productos .items li{
         width: 35%; 
     }
 }
@@ -209,7 +189,7 @@
         width: 45%;
     }
 
-    .ofertas .ofertas_items li{
+    .productos .items li{
         width: 80%; 
     }
 
