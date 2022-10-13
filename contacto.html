@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/imagenes/iconos/La huerta.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@400;700&family=Oxygen:wght@400;700&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles/style.css">
+    <link rel="stylesheet" href="assets/styles/style_header.css">
+    <link rel="stylesheet" href="assets/styles/style_contacto.css">
+    <link rel="stylesheet" href="assets/styles/style_footer.css">
+    <title>La Huerta</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="index.html"><img src="assets/imagenes/lahuertalogo.png" alt="logo de la huerta"></a>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="#">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn_contacto"><button>Ingresar</button></a>
+    </header>
+    <main>
+        <section class="contenedor">
+            <div class="datos">
+                <ul>
+                    <li>
+                        <div class="datos_img">
+                            <img src="assets/imagenes/iconos/direccion.png" alt="">
+                        </div>
+                        <div class="datos_texto">
+                            <h2>Nuestro punto ventas</h2>
+                            <p>Uspallata 125, Mendoza, Argentina</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datos_img">
+                            <img src="assets/imagenes/iconos/telefono.png" alt="">
+                        </div>
+                        <div class="datos_texto">
+                            <h2>Nuestro telefono</h2>
+                            <p>(+54) 261-123 4567</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datos_img">
+                            <img src="assets/imagenes/iconos/email.png" alt="">
+                        </div>
+                        <div class="datos_texto">
+                            <h2>Nuestro e-mail</h2>
+                            <p>info@lahuerta.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datos_img">
+                            <img src="assets/imagenes/iconos/ubicacion.png" alt="">
+                        </div>
+                        <div class="datos_texto">
+                            <h2>Nuestra ubicacion</h2>
+                            <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13126.142807927821!2d-58.65728494999999!3d-34.66642685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1597477211645!5m2!1ses!2sar"
+                            frameborder="0" style="border:10;" allowfullscreen="yes"
+                            aria-hidden="false" tabindex="0" class="iframe_ubicacion"></iframe>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="formulario">
+                <h2>Formulario de contacto</h2>
+                <p>Podes enviarnos un mensaje que te responderemos a la brevedad.</p>
+                <form action="">
+                    <label for="nombre">Nombre y Apellido: <sup>*</sup></label>
+                    <input type="text" name="nombre" id="nombre" title="Ingresa tu nombre y apellido" required>
+                    <label for="mail">E-mail: <sup>*</sup></label>
+                    <input type="email" name="mail" id="mail" title="Ingrese su direccion de correo electrónico" required placeholder="email@dominio.com">
+                    <label for="tel">Telefono: </label>
+                    <input type="tel" name="tel" id="tel" title="Ingrese su telefono" placeholder="(XX) XXXX XXXX">
+                    <label for="mensaje">Mensaje: <sup>*</sup></label>
+                    <textarea name="mensaje" id="mensaje" cols="70" rows="5" required placeholder="Ingrese su mensaje"></textarea>
+                    <input type="submit" value="Enviar" class="enviar" id="btn_enviar">
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="lista_opciones">
+            <ul>
+                <h3>Contactanos</h3>
+                <li>
+                    <img src="assets/imagenes/footer/telefono.png" alt="">
+                    <p>Telefono: (+54) 0261-1234567 </p>
+                </li>
+                <li>
+                    <img src="assets/imagenes/footer/email.png" alt="">
+                    <p>Email: lahuerta@lahuerta.com</p>
+                </li>
+                <li>
+                    <img src="assets/imagenes/footer/ubicacion.png" alt="">
+                    <p>Direccion: Lorem 256, Mendoza</p>
+                </li>
+            </ul>
+            <ul>
+                <h3>Seguinos en </h3>
+                <li>
+                    <img src="assets/imagenes/footer/instagram.png" alt="">
+                    <a href="#">Instagram</a>
+                </li>
+                <li>
+                    <img src="assets/imagenes/footer/facebook.png" alt="">
+                    <a href="#">Facebook</a>
+                </li>
+                <li>
+                    <img src="assets/imagenes/footer/twitter.png" alt="">
+                    <a href="#">Twitter</a>
+                </li>
+            </ul>
+            <ul>
+                <h3>Enlaces</h3>
+                <li>
+                    <a href="#">Nosotros</a>
+                </li>
+                <li>
+                    <a href="productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </section>
+        <section class="copyright">
+            <p>&#169 Copyright Grupo19 - 2022</p>
+        </section>
+    </footer>
+</body>
+
+</html>
