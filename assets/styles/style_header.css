@@ -8,7 +8,6 @@
 }
 
 /*Configuracion del logo*/
-
 .header .logo{
     cursor: pointer;
     margin-right: auto;
@@ -23,8 +22,8 @@
 .header .logo img:hover{
     transform: scale(1.2);
 }
-
 /*Fin configuracion logo*/
+
 
 /*Configuracion de links*/
 .header .nav_links{
@@ -49,8 +48,8 @@
 .header .nav_links li a:hover{
     color: #ffbc0e;
 }
-
 /*Fin configuracion de links*/
+
 
 /*Configuracion boton*/
 .header .btn_contacto button{
@@ -70,9 +69,10 @@
     color: #ffbc0e;
     transform: scale(1.1);
 }
-
 /*Fin configuracion boton*/
 
+
+/*--------------------- Responsive Inicio ------------------------------*/
 
 /*Configuracion responsive*/
 /*Tablet o monitores viejos*/
@@ -82,7 +82,6 @@
         height: 200px;
         align-items: center;
         text-align: center;
-
     }
 
     .header .logo img{
@@ -116,4 +115,4 @@
     }
 }
 
-/*Fin de configuracion responsive*/
+/*----------------------- Responsive Fin -------------------------------*/

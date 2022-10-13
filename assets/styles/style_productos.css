@@ -5,10 +5,6 @@
     top: 0px;
 }
 
-@media only screen and (min-width: 400px) {
-    
-}
-
 .navbar ul li{
     float: right;
 }
@@ -103,4 +99,31 @@ main{
 .caja-producto a{
     text-decoration: none;
     font-weight: bold;
+}
+
+/*Tablet o monitores viejos*/
+@media only screen and (max-width: 900px){
+
+    .caja .caja-producto{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+
+/*Tablet chicas*/
+@media only screen and (max-width: 800px){
+
+
+}
+
+/*Celulares Grandes*/
+@media only screen and (max-width: 520px){
+
+    
+}
+
+/*Celulares Chicos*/
+@media only screen and (max-width: 345px){
+   
 }
