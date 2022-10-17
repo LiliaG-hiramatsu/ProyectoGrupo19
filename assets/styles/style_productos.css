@@ -1,64 +1,10 @@
-.navbar{
-    width: 100%;
-    background-color: black;
-    position: fixed;
-    top: 0px;
-}
-
-.navbar ul li{
-    float: right;
-}
-
-.navbar ul li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 0.7em 1em;
-    text-decoration: none;
-    font-family: Arial, Helvetica, sans-serif;
-    margin-right: 15px;
-}
-
-.navbar ul li a:hover {
-    background-color: #111;
-}
-
-.logo{
-    width: 3%;
-    height: auto;
-    float: left;
-    margin: 12px 7px;
-    vertical-align: middle;
-}
-
-.portada{
-    display: flex;
-}
-
-.portada img{
-    width: 100%;
-    height: auto;
-    justify-content: center;
-    background-repeat: no-repeat;
-}
-
-main{
-    margin-top: 5%;
-    background-color: #D5F5E3;
-}
-
-.encabezado{
-    display: grid;
-    grid-template-columns: auto;
-    padding: 4px;
-}
-
 .grid-container{
     display: grid;
     grid-template-columns: 30% 30% 30%;
     gap: 3%;
     padding: 2%;
     justify-content: center;
+    margin: 3%;
 }
 
 .caja{
@@ -69,11 +15,8 @@ main{
 }
 
 .caja a{
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
     color: black;
     text-decoration: none;
-
 }
 
 .caja a:hover{
@@ -89,7 +32,6 @@ main{
 
 .caja-producto h4{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
 .caja-producto h2{
@@ -97,33 +39,43 @@ main{
 }
 
 .caja-producto a{
+    font-size: 10px;
+    color: #0E6655;
     text-decoration: none;
     font-weight: bold;
 }
 
-/*Tablet o monitores viejos*/
-@media only screen and (max-width: 900px){
+/*Tablet*/
+@media only screen and (max-width: 800px){
+    .grid-container{
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
 
-    .caja .caja-producto{
-        flex-wrap: wrap;
-        justify-content: center;
+    .caja a{
+        font-size: 18px;
+    }
+
+    .caja-producto h4{
+        font-size: 15px;
     }
 
 }
 
-/*Tablet chicas*/
-@media only screen and (max-width: 800px){
-
-
-}
-
-/*Celulares Grandes*/
+/*Celulares*/
 @media only screen and (max-width: 520px){
 
-    
-}
+    .grid-container{
+        display: grid;
+        grid-template-columns: 50%;
+    }
 
-/*Celulares Chicos*/
-@media only screen and (max-width: 345px){
-   
+    .caja a{
+        font-size: 12px;
+    }
+
+    .caja-producto h4{
+        font-size: 10px;
+    }
+    
 }
