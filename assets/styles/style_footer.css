@@ -1,6 +1,7 @@
 footer{
     background:#1b3039;
     padding: 0px 10%;
+    margin-bottom: 0px;
 }
 
 footer .lista_opciones{
@@ -47,7 +48,7 @@ footer .lista_opciones a{
 }
 
 footer .lista_opciones img{
-    width: 08%;
+    width: 8%;
     margin: 0.3em;
 }
 
