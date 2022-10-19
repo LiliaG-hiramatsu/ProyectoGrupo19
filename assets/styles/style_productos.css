@@ -1,3 +1,14 @@
+.seccion_productos{
+    background-color: lightgoldenrodyellow;
+    margin: 1%;
+}
+
+.titulo_producto{
+    font-size: 1.5em;
+    color: rgb(97, 96, 96);
+    padding: 10px 2.5%;
+}
+
 .grid-container{
     display: grid;
     grid-template-columns: auto auto auto;
