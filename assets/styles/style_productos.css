@@ -1,39 +1,38 @@
+.seccion_productos{
+    background-color: lightgoldenrodyellow;
+    padding: 1%;
+    padding-bottom: 3%;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.titulo_productos{
+    font-size: 1.5em;
+    color: rgb(97, 96, 96);
+    padding: 10px 2.5%;
+}
+
 .grid-container{
     display: grid;
-    grid-template-columns: auto auto auto;
-    gap: 5%;
-    padding: 2%;
-    margin-bottom: 2%;
+    grid-template-columns: 30% 30% 30%;
+    gap: 2%;
+    justify-content: center;
+    padding: 1%;
+    margin-bottom: 3%
 }
 
 .caja_img{
-    height: 200px;
     background-color: white;
     border: 2px solid black;
+    border-radius: 5%;
     padding: 1%;
     text-align: center;
 }
 
-.caja{
-    height: 200px;
-    background-color: white;
-    border: 2px solid black;
-    padding: 20% 1%;
-    text-align: center;
-}
-
-.caja a{
-    color: black;
-    text-decoration: none;
-}
-
-.caja a:hover{
-    font-weight: bold;
-}
-
 .caja_img a{
-    color: black;
+    color: rgb(0, 0, 0);
     text-decoration: none;
+    font-size: 25px;
 }
 
 .caja_img a:hover{
@@ -43,11 +42,50 @@
 .caja_img img{
     width: 140px;
     height: auto;
+    margin-top: 4%;
+}
+
+.grid-container-caja{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 2%;
+    justify-content: center;
+    padding: 1%;
+    margin-bottom: 3%
+}
+
+.caja{
+    background-color: rgb(241, 241, 162);
+    border: 2px solid black;
+    border-radius: 5%;
+    padding: 20% 1%;
+    text-align: center;
+}
+
+.caja a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+.caja a:hover{
+    font-weight: bold;
+}
+
+.grid-container-caja-producto{
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    gap: 3%;
+    justify-content: center;
+    padding: 1%;
+    padding-bottom: 5%;
+    margin-bottom: 3%
 }
 
 .caja-producto{
     background-color: white;
     border: 2px solid black;
+    border-radius: 5%;
     padding: 3%;
     text-align: center;
 }
@@ -61,47 +99,182 @@
 }
 
 .caja-producto a{
-    font-size: 10px;
     color: #0E6655;
     text-decoration: none;
     font-weight: bold;
+}
+
+.caja-producto a span{
+    font-size: 15px;
 }
 
 .caja-producto a span:hover{
     color: #FFC300;
 }
 
-/*Tablet*/
-@media only screen and (max-width: 800px){
-    .grid-container{
-        display: grid;
-        grid-template-columns: 50% 50%;
+/*Tablet o monitores viejos*/
+@media only screen and (max-width: 900px){
+    .titulo_productos{
+        font-size: 1.4em;
     }
 
+    .caja_img a{
+        font-size: 20px;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 30% 30% 30%;
+        justify-content: center;
+    }
+
+    .grid-container-caja{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: center;
+    }
+    
     .caja a{
-        font-size: 18px;
+        color: black;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .grid-container-caja-producto{
+        display: grid;
+        grid-template-columns: 25% 25% 25%;
+        justify-content: center;
     }
 
     .caja-producto h4{
-        font-size: 15px;
+        font-size: 18px;
+    }
+}
+
+/*Tablet chicas*/
+@media only screen and (max-width: 800px){
+    .titulo_productos{
+        font-size: 1.3em;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        margin-bottom: 10%
+    }
+
+    .grid-container-caja{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        margin-bottom: 16%;
+    }
+
+    .caja a{
+        color: black;
+        text-decoration: none;
+        font-size: 22px;
+    }
+
+    .grid-container-caja-producto{
+        display: grid;
+        grid-template-columns: 40% 40%;
+        justify-content: center;
+        margin-bottom: 15%;
+    }
+
+    .caja-producto h4{
+        font-size: 18px;
     }
 
 }
 
-/*Celulares*/
+/*Celulares Grandes*/
 @media only screen and (max-width: 520px){
+
+    .titulo_productos{
+        font-size: 1.2em;
+    }
 
     .grid-container{
         display: grid;
         grid-template-columns: 50%;
+        justify-content: center;
+        margin-bottom: 80%
+    }
+
+    .grid-container-caja{
+        display: grid;
+        grid-template-columns: 50%;
+        justify-content: center;
+        margin-bottom: 90%;
     }
 
     .caja a{
-        font-size: 12px;
+        color: black;
+        text-decoration: none;
+        font-size: 20px;
+    }
+
+    .grid-container-caja-producto{
+        display: grid;
+        grid-template-columns: 50%;
+        justify-content: center;
+        margin-bottom: 90%;
     }
 
     .caja-producto h4{
-        font-size: 10px;
+        font-size: 17px;
     }
-    
+
+    .caja-producto a span{
+        font-size: 13px;
+    }
+}
+
+/*Celulares Chicos*/
+@media only screen and (max-width: 345px){
+    .titulo_productos{
+        font-size: 1em;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: 50%;
+        justify-content: center;
+        margin-bottom: 90%
+    }
+
+    .caja_img a{
+        color: rgb(0, 0, 0);
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .caja_img img{
+        width: 110px;
+        height: auto;
+        margin-top: 4%;
+    }
+
+    .grid-container-caja{
+        display: grid;
+        grid-template-columns: 50%;
+        justify-content: center;
+        margin-bottom: 95%;
+    }
+
+    .caja a{
+        color: black;
+        text-decoration: none;
+        font-size: 15px;
+    }
+
+    .grid-container-caja-producto{
+        display: grid;
+        grid-template-columns: 50%;
+        justify-content: center;
+        margin-bottom: 95%;
+    }
 }
