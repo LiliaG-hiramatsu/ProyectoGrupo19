@@ -4,6 +4,7 @@
     padding:1%;
     display: flex;
     overflow: hidden;
+    
 }
 
 /*------------------------- Datos Inicio ---------------------------------*/
@@ -13,6 +14,7 @@
     border-top-left-radius: 3%;
     border-bottom-left-radius: 3%;
     width: 50%;  
+
     
 }
 
@@ -43,6 +45,11 @@
 .contenedor .datos .datos_texto p{
     font-size: 0.9rem;
 }
+
+.contenedor .datos #contenedor_frame{
+    margin-bottom: 1.5em;
+}
+
 
 .contenedor .datos .iframe_ubicacion{
     width: 100%;
@@ -86,6 +93,15 @@
 .contenedor .formulario form label sup{
     color: red;
     font-size: 0.8rem;
+}
+
+.contenedor .formulario form .mensaje{
+    color:red;
+    font-size: 0.6rem;
+}
+
+#cant_caracteres{
+    text-align: right;
 }
 
 .contenedor .formulario form input{

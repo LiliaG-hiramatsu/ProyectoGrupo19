@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/styles/style_header.css">
     <link rel="stylesheet" href="assets/styles/style_contacto.css">
     <link rel="stylesheet" href="assets/styles/style_footer.css">
+    <script src="assets/js/contacto.js"></script>
     <title>La Huerta</title>
 </head>
 
@@ -65,9 +66,18 @@
                     </li>
                     <li>
                         <div class="datos_img">
-                            <img src="assets/imagenes/iconos/ubicacion.png" alt="">
+                            <img src="assets/imagenes/iconos/horario.png" alt="">
                         </div>
                         <div class="datos_texto">
+                            <h2>Nuestro horario de atencion</h2>
+                            <p>Lunes a Sabados de 8:00 hs a 20:00 hs. <br>Domingos de 8:00 hs a 13:00 hs.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datos_img">
+                            <img src="assets/imagenes/iconos/ubicacion.png" alt="">
+                        </div>
+                        <div class="datos_texto" id="contenedor_frame">
                             <h2>Nuestra ubicacion</h2>
                             <iframe
                             src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13126.142807927821!2d-58.65728494999999!3d-34.66642685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1597477211645!5m2!1ses!2sar"
@@ -80,15 +90,20 @@
             <div class="formulario">
                 <h2>Formulario de contacto</h2>
                 <p>Podes enviarnos un mensaje que te responderemos a la brevedad.</p>
-                <form action="">
+                <form name="formulario" action="destino.html" onsubmit="return validarFormulario()">
                     <label for="nombre">Nombre y Apellido: <sup>*</sup></label>
-                    <input type="text" name="nombre" id="nombre" title="Ingresa tu nombre y apellido" required>
-                    <label for="mail">E-mail: <sup>*</sup></label>
-                    <input type="email" name="mail" id="mail" title="Ingrese su direccion de correo electrónico" required placeholder="email@dominio.com">
-                    <label for="tel">Telefono: </label>
-                    <input type="tel" name="tel" id="tel" title="Ingrese su telefono" placeholder="(XX) XXXX XXXX">
-                    <label for="mensaje">Mensaje: <sup>*</sup></label>
-                    <textarea name="mensaje" id="mensaje" cols="70" rows="5" required placeholder="Ingrese su mensaje"></textarea>
+                    <input type="text" name="nombre" id="nombre" title="Ingresa tu nombre y apellido">
+                    <label class="mensaje" id="mensaje_nombre"></label>
+                    <label for="correo">E-mail: <sup>*</sup></label>
+                    <input type="text" name="correo" id="correo" title="Ingrese su direccion de correo electrónico" placeholder="email@dominio.com">
+                    <label class="mensaje" id="mensaje_correo"></label>
+                    <label for="telefono">Telefono: <sup>*</sup></label>
+                    <input type="text" name="telefono" id="telefono" title="Ingrese su telefono" placeholder="(XXX) XXXX-XXXX">
+                    <label class="mensaje" id="mensaje_telefono"></label>
+                    <label for="text_area">Mensaje: <sup>*</sup></label>
+                    <textarea name="text_area" id="text_area" cols="70" rows="5" placeholder="Ingrese su mensaje" onkeyup="contadorLetras(this)"></textarea>
+                    <label class="mensaje" id="cant_caracteres">500 caracteres</label>
+                    <label class="mensaje" id="mensaje_text_area"></label>  
                     <input type="submit" value="Enviar" class="enviar" id="btn_enviar">
                 </form>
             </div>
