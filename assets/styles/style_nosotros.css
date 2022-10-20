@@ -7,17 +7,23 @@
 .bienvenida{
     background-color: lightgoldenrodyellow;
     border-style: outset;
-    margin: 1%;
+    margin: 2%;
     padding: 1%;
     position: relative;
     text-align: left;
+    font-size: 14px;
 }
 
 .mapa{
-    display: block;
+    display: flex;
     width: fit-content;
-    margin-left: 20%;
+    margin-left: 2%;
     border: 2px solid gray;
+    border-radius: 5%;
+}
+
+.mapa iframe{
+    border-radius: 5%;
 }
 
 .contenedor_persona{
@@ -28,6 +34,7 @@
     justify-content: center;
     background-color: lightgoldenrodyellow;
     border: 2px solid black;
+    border-radius: 50%;
     width: 30%;
     padding: 3%;
     margin: 2%;
@@ -44,4 +51,54 @@
     width: 45%;
     height: auto;
     border: 2px solid gray;
+}
+
+/*Tablet o monitores viejos*/
+@media only screen and (max-width: 900px){
+    
+}
+
+/*Tablet chicas*/
+@media only screen and (max-width: 800px){
+    .titulo_nos{
+        font-size: 1.3em;
+    }
+
+    .bienvenida{
+        font-size: 12px;
+    }
+
+    .persona span{
+        font-size: 12px;
+    }
+}
+
+/*Celulares Grandes*/
+@media only screen and (max-width: 520px){
+    .titulo_nos{
+        font-size: 1.2em;
+    }
+
+    .bienvenida{
+        font-size: 11px;
+    }
+
+    .persona span{
+        font-size: 11px;
+    }
+}
+
+/*Celulares Chicos*/
+@media only screen and (max-width: 345px){
+    .titulo_nos{
+        font-size: 1.1em;
+    }
+
+    .bienvenida{
+        font-size: 10px;
+    }
+
+    .persona span{
+        font-size: 10px;
+    }
 }
