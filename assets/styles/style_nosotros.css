@@ -6,17 +6,20 @@
 
 .bienvenida{
     background-color: lightgoldenrodyellow;
-    border-style: outset;
-    margin: 2%;
+    margin: 1% 10%;
     padding: 1%;
     position: relative;
+}
+
+.bienvenida p{
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .mapa{
     display: flex;
-    width: fit-content;
+    width: 600px;
+    height: 450px;
     margin-left: 2%;
     border: 2px solid gray;
     border-radius: 5%;
@@ -24,6 +27,8 @@
 
 .mapa iframe{
     border-radius: 5%;
+    width: 100%;
+    height: auto;
 }
 
 .contenedor_persona{
@@ -34,8 +39,8 @@
     justify-content: center;
     background-color: lightgoldenrodyellow;
     border: 2px solid black;
-    border-radius: 50%;
-    width: 30%;
+    border-radius: 10%;
+    width: 50%;
     padding: 3%;
     margin: 2%;
     margin-left: 30%;
@@ -48,9 +53,8 @@
 }
 
 .persona img{
-    width: 45%;
+    width: 60%;
     height: auto;
-    border: 2px solid gray;
 }
 
 /*Tablet o monitores viejos*/
@@ -64,13 +68,15 @@
         font-size: 1.3em;
     }
 
-    .bienvenida{
-        font-size: 12px;
+    .bienvenida p{
+        font-size: 14px;
     }
 
-    .persona span{
-        font-size: 12px;
+    .mapa{
+        width: 500px;
+        height: 450px;
     }
+    
 }
 
 /*Celulares Grandes*/
@@ -79,13 +85,15 @@
         font-size: 1.2em;
     }
 
-    .bienvenida{
-        font-size: 11px;
+    .mapa{
+        width: 400px;
+        height: 350px;
     }
 
-    .persona span{
-        font-size: 11px;
+    .persona{
+        padding: 5%;
     }
+
 }
 
 /*Celulares Chicos*/
@@ -95,10 +103,12 @@
     }
 
     .bienvenida{
-        font-size: 10px;
+        font-size: 9px;
     }
 
-    .persona span{
-        font-size: 10px;
+    .mapa{
+        width: 400px;
+        height: 350px;
     }
+
 }
