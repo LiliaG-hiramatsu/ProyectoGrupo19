@@ -1,9 +1,10 @@
 //Validacion de un formulario completo
 //Funcion general para validar que los datos esten completos
 function validarFormulario(){
-    if (validarNombre() && validarCorreo() && validarTelefono() && validarTextArea()){
+    if ((validarNombre())&&(validarCorreo())&&(validarTelefono())&&(validarTextArea())){
         return true;
-    }else{
+    }
+    else{
         if (validarNombre()){
             document.getElementById("mensaje_nombre").innerHTML = "";
         }
@@ -94,6 +95,38 @@ function contadorLetras(obj){
     }
 }
 
-
+//Mensaje de correo enviado con exito
+const $form = document.querySelector('#form');
+$form.addEventListener('submit', handleSubmit);
+        
+//Funciones auxiliares para el mensaje enviad co
+async function handleSubmit(event){
+    if (validarFormulario()){
+        event.preventDefault()
+        const form = new FormData(this)
+        const response = await fetch(this.action,{
+            method:this.method,
+            body: form,
+            headers:{
+                'Accept':'application/json'}
+            })
+            if(response.ok){
+                this.reset();
+                document.getElementById("mensaje_nombre").innerHTML = "";
+                document.getElementById("mensaje_correo").innerHTML = "";
+                document.getElementById('mensaje_telefono').innerHTML = "";
+                document.getElementById('mensaje_text_area').innerHTML = "";
+                document.getElementById('cant_caracteres').innerHTML = "500 caracteres"
+                /*
+                alert('Gracias por contactarte con nosotros. <br>Te contetaremos a la brevedad.')
+                */
+                swal({
+                    title: "Tu mensaje fue enviado!",
+                    text: "Gracias por contactarte, nos comunicaremos con vos lo mas pronto posible.",
+                    icon: "success",
+                    });     
+            }
+    } 
+}
 //----------------------------------------------------------------------------------------
 //----------------------------------------------------------------------------------------
