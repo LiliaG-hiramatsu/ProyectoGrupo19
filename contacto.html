@@ -21,16 +21,16 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="/index.html"><img src="/assets/imagenes/lahuertalogo.png" alt="logo de la huerta"></a>
+            <a href="index.html"><img src="assets/imagenes/lahuertalogo.png" alt="logo de la huerta"></a>
         </div>
         <nav>
             <ul class="nav_links">
-                <li><a href="/nosotros.html">Nosotros</a></li>
-                <li><a href="/productos.html">Productos</a></li>
-                <li><a href="/contacto.html">Contacto</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
             </ul>
         </nav>
-        <a href="/ingresar.html" class="btn_contacto"><button>Ingresar</button></a>
+        <a href="ingresar.html" class="btn_contacto"><button>Ingresar</button></a>
     </header>
     <main>
         <section class="contenedor">
@@ -79,9 +79,9 @@
                         <div class="datos_texto" id="contenedor_frame">
                             <h2>Nuestra ubicacion</h2>
                             <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d13126.142807927821!2d-58.65728494999999!3d-34.66642685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses!2sar!4v1597477211645!5m2!1ses!2sar"
-                            frameborder="0" style="border:10;" allowfullscreen="yes"
-                            aria-hidden="false" tabindex="0" class="iframe_ubicacion"></iframe>
+                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d26814.9629162564!2d-68.872745!3d-32.8486839!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e0976b4786cc1%3A0xe42f31f130bc83ba!2sLa%20Huerta%20Mendoza!5e0!3m2!1ses!2sar!4v1666737934040!5m2!1ses!2sar"
+                                frameborder="0" style="border:10;" allowfullscreen="yes" aria-hidden="false"
+                                tabindex="0" class="iframe_ubicacion"></iframe>
                         </div>
                     </li>
                 </ul>
@@ -89,20 +89,24 @@
             <div class="formulario">
                 <h2>Formulario de contacto</h2>
                 <p>Podes enviarnos un mensaje que te responderemos a la brevedad.</p>
-                <form id="form" class="form" onsubmit="return validarFormulario()" action="https://formspree.io/f/mrgdypgn" method="POST">
+                <form id="form" class="form" onsubmit="return validarFormulario()"
+                    action="https://formspree.io/f/mrgdypgn" method="POST">
                     <label for="nombre">Nombre y Apellido: <sup>*</sup></label>
                     <input type="text" name="nombre" id="nombre" title="Ingresa tu nombre y apellido">
                     <label class="mensaje" id="mensaje_nombre"></label>
                     <label for="correo">E-mail: <sup>*</sup></label>
-                    <input type="text" name="correo" id="correo" title="Ingrese su direccion de correo electrónico" placeholder="email@dominio.com">
+                    <input type="text" name="correo" id="correo" title="Ingrese su direccion de correo electrónico"
+                        placeholder="email@dominio.com">
                     <label class="mensaje" id="mensaje_correo"></label>
                     <label for="telefono">Telefono: <sup>*</sup></label>
-                    <input type="text" name="telefono" id="telefono" title="Ingrese su telefono" placeholder="(XXX) XXXX-XXXX">
+                    <input type="text" name="telefono" id="telefono" title="Ingrese su telefono"
+                        placeholder="(XXX) XXXX-XXXX">
                     <label class="mensaje" id="mensaje_telefono"></label>
                     <label for="text_area">Mensaje: <sup>*</sup></label>
-                    <textarea name="text_area" id="text_area" cols="70" rows="5" placeholder="Ingrese su mensaje" onkeyup="contadorLetras(this)"></textarea>
+                    <textarea name="text_area" id="text_area" cols="70" rows="5" placeholder="Ingrese su mensaje"
+                        onkeyup="contadorLetras(this)"></textarea>
                     <label class="mensaje" id="cant_caracteres">500 caracteres</label>
-                    <label class="mensaje" id="mensaje_text_area"></label>                     
+                    <label class="mensaje" id="mensaje_text_area"></label>
                     <input type="submit" value="Enviar" class="enviar" id="btn_enviar">
                 </form>
                 <a href="mailto:lahuerta358@gmail.com" id="idform"></a>
@@ -144,13 +148,13 @@
             <ul>
                 <h3>Enlaces</h3>
                 <li>
-                    <a href="/nosotros.html">Nosotros</a>
+                    <a href="nosotros.html">Nosotros</a>
                 </li>
                 <li>
-                    <a href="/productos.html">Productos</a>
+                    <a href="productos.html">Productos</a>
                 </li>
                 <li>
-                    <a href="/contacto.html">Contacto</a>
+                    <a href="#">Contacto</a>
                 </li>
             </ul>
         </section>
@@ -159,11 +163,12 @@
         </section>
     </footer>
 
-    <!--Scripts-->
+    <!--Inicio vinculacion archivos Scripts-->
     <script src="assets/js/contacto.js"></script>
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-      crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--Fin vinculacion archivos Scripts-->
 </body>
 
 </html>
