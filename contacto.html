@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/imagenes/iconos/La huerta.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@400;700&family=Oxygen:wght@400;700&family=Raleway:wght@500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style_header.css">
+    <link rel="stylesheet" href="./assets/styles/style_contacto.css">
+    <link rel="stylesheet" href="./assets/styles/style_footer.css">
+    <title>La Huerta</title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/imagenes/lahuertalogo.png" alt="logo de la huerta"></a>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="./ingresar.html" class="btn_contacto"><button>Ingresar</button></a>
+    </header>
+    <main>
+        <section class="contenedor">
+            <div class="datos">
+                <ul>
+                    <li>
+                        <div class="datos_img">
+                            <img src="./assets/imagenes/iconos/direccion.png" alt="icono_direccion">
+                        </div>
+                        <div class="datos_texto">
+                            <h2>Nuestro punto ventas:</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datos_img">
+                            <img src="./assets/imagenes/iconos/telefono.png" alt="icono_telefono">
+                        </div>
+                        <div class="datos_texto">
+                            <h2>Nuestro telefono:</h2>
+                            <p>(+54) 123456</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datos_img">
+                            <img src="./assets/imagenes/iconos/email.png" alt="icono_correo">
+                        </div>
+                        <div class="datos_texto">
+                            <h2>Nuestro e-mail:</h2>
+                            <p>lahuertamza@gmail.com</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datos_img">
+                            <img src="./assets/imagenes/iconos/horario.png" alt="icono_horario">
+                        </div>
+                        <div class="datos_texto">
+                            <h2>Nuestro horario de atencion:</h2>
+                            <p>Atendemos todos los dias de: <br>9:00 hs a 14:30 hs. <br>17:00 hs a 00:00 hs.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="datos_img">
+                            <img src="./assets/imagenes/iconos/ubicacion.png" alt="icono_ubicacion">
+                        </div>
+                        <div class="datos_texto" id="contenedor_frame">
+                            <h2>Nuestra ubicacion</h2>
+                            <iframe>
+                            </iframe>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="formulario">
+                <h2>Formulario de contacto</h2>
+                <p>Podes enviarnos un mensaje que te responderemos a la brevedad.</p>
+                <form id="form" class="form" onsubmit="return validarFormulario()"
+                    action="https://formspree.io/f/mrgdypgn" method="POST">
+                    <label for="nombre">Nombre y Apellido: <sup>*</sup></label>
+                    <input type="text" name="nombre" id="nombre" title="Ingresa tu nombre y apellido">
+                    <label class="mensaje" id="mensaje_nombre"></label>
+                    <label for="correo">E-mail: <sup>*</sup></label>
+                    <input type="text" name="correo" id="correo" title="Ingrese su direccion de correo electrónico"
+                        placeholder="email@dominio.com">
+                    <label class="mensaje" id="mensaje_correo"></label>
+                    <label for="telefono">Telefono: <sup>*</sup></label>
+                    <input type="text" name="telefono" id="telefono" title="Ingrese su telefono"
+                        placeholder="(XXX) XXXX-XXXX">
+                    <label class="mensaje" id="mensaje_telefono"></label>
+                    <label for="text_area">Mensaje: <sup>*</sup></label>
+                    <textarea name="text_area" id="text_area" cols="70" rows="5" placeholder="Ingrese su mensaje"
+                        onkeyup="contadorLetras(this)"></textarea>
+                    <label class="mensaje" id="cant_caracteres">500 caracteres</label>
+                    <label class="mensaje" id="mensaje_text_area"></label>
+                    <input type="submit" value="Enviar" class="enviar" id="btn_enviar">
+                </form>
+                <a href="mailto:liliagarciahiramatsu@gmail.com" id="idform"></a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="lista_opciones">
+            <ul>
+                <h3>Contactanos</h3>
+                <li>
+                    <img src="./assets/imagenes/footer/telefono.png" alt="icono_telefono">
+                    <p>Telefono: (+54) 123456</p>
+                </li>
+                <li>
+                    <img src="./assets/imagenes/footer/email.png" alt="icono_correo">
+                    <p>Email: lahuertamza@gmail.com</p>
+                </li>
+                <li>
+                    <img src="./assets/imagenes/footer/ubicacion.png" alt="icono_ubicacion">
+                    <p>Direccion: Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </li>
+            </ul>
+            <ul>
+                <h3>Seguinos en </h3>
+                <li>
+                    <img src="./assets/imagenes/footer/instagram.png" alt="icono_instagram">
+                    <a href="#" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <img src="./assets/imagenes/footer/facebook.png" alt="icono_facebook">
+                    <a href="#" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <img src="./assets/imagenes/footer/twitter.png" alt="icono_twitter">
+                    <a href="#" target="_blank">Twitter</a>
+                </li>
+            </ul>
+            <ul>
+                <h3>Enlaces</h3>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="#">Contacto</a>
+                </li>
+            </ul>
+        </section>
+        <section class="copyright">
+            <p>&#169 Copyright Grupo19 Codo a Codo - 2022</p>
+        </section>
+    </footer>
+
+    <!--Inicio vinculacion archivos Scripts-->
+    <script src="./assets/js/contacto.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <!--Fin vinculacion archivos Scripts-->
+</body>
+
+</html>

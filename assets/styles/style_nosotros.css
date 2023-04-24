@@ -27,18 +27,13 @@
 }
 
 .contenedor_persona{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .persona{
-    justify-content: center;
-    background-color: lightgoldenrodyellow;
-    border: 2px solid black;
-    border-radius: 50%;
-    width: 30%;
-    padding: 3%;
-    margin: 2%;
-    margin-left: 30%;
+    margin: 30px 0;
     text-align: center;
 }
 
@@ -48,7 +43,7 @@
 }
 
 .persona img{
-    width: 45%;
+    width: 300px;
     height: auto;
     border: 2px solid gray;
 }

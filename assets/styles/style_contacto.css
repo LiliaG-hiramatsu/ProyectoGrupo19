@@ -1,0 +1,200 @@
+.contenedor{
+    background: rgb(241, 203, 106);
+    margin: 0px 10%;
+    padding:1%;
+    display: flex;
+    overflow: hidden;
+    
+}
+
+/*------------------------- Datos Inicio ---------------------------------*/
+/*Configuracion de la seccion con nuestros datos */
+.contenedor .datos{
+    background: lightgoldenrodyellow;
+    border-top-left-radius: 3%;
+    border-bottom-left-radius: 3%;
+    width: 50%;  
+
+    
+}
+
+.contenedor .datos li{
+    display: flex;
+    padding: 0.5em;
+}
+
+.contenedor .datos .datos_img{
+    width: 15%;
+    padding: 0.5em;
+}
+
+.contenedor .datos .datos_img img{
+    width: 100%;
+}
+
+.contenedor .datos .datos_texto{
+    width: 85%;
+}
+
+.contenedor .datos .datos_texto h2{
+    font-size: 1rem;
+    margin-bottom: 0.5em;
+    color: darkgreen;
+}
+
+.contenedor .datos .datos_texto p{
+    font-size: 0.9rem;
+}
+
+.contenedor .datos #contenedor_frame{
+    margin-bottom: 1.5em;
+}
+
+
+.contenedor .datos .iframe_ubicacion{
+    width: 100%;
+    height: 100%;
+}
+/*Fin de la configuracion de la seccion con nuestros datos */
+/*------------------------- Datos Fin ---------------------------------*/
+
+/*------------------------- Formulario Inicio ---------------------------------*/
+/*Configuracion del formulario de contacto */
+.contenedor .formulario{
+    /*background: red;*/
+    width: 50%;
+    padding: 1% 1% 0% 1%;
+}
+
+.contenedor .formulario h2{
+    font-size: 1rem;
+    color: darkgreen;
+    text-align: center;
+
+}
+
+.contenedor .formulario p{
+    font-size: 0.8rem;
+    margin: 1em 0em;
+}
+
+.contenedor .formulario form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor .formulario form label{
+    font-size: 0.9rem;
+    color: darkgreen;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+.contenedor .formulario form label sup{
+    color: red;
+    font-size: 0.8rem;
+}
+
+.contenedor .formulario form .mensaje{
+    color:red;
+    font-size: 0.6rem;
+}
+
+#cant_caracteres{
+    text-align: right;
+}
+
+.contenedor .formulario form input{
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.8em;
+    width: 100%;
+    margin-bottom: 0.5em;
+}
+
+.contenedor .formulario form textarea{
+    border: none;
+    border-radius: 0.5rem;
+    font-size: 0.9rem;
+    padding: 0.8em;
+    width: 100%;
+    margin-bottom: 0.5em;
+    resize: none;
+}
+
+.contenedor .formulario form #btn_enviar{
+    border-radius: 25rem;
+    width: 40%;
+    background-color: #eceff1;
+    color: #1b3039;
+    margin-left: 30%;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: all 0.3s ease 0s;
+}
+
+.contenedor .formulario form #btn_enviar:hover{
+    transform: scale(1.1);
+    background-color: #e2f1f8;
+    color: #ffbc0e;
+}
+
+
+
+
+
+/*Fin de la configuracion del formulario de contacto */
+/*------------------------- Formulario Fin ---------------------------------*/
+
+
+/*--------------------- Responsive Inicio ------------------------------*/
+
+/*Configuracion responsive*/
+/*Tablet o monitores viejos*/
+@media only screen and (max-width: 900px){
+
+}
+
+/*Tablet chicas*/
+@media only screen and (max-width: 800px){
+    .contenedor{
+        flex-direction: column;
+    }
+
+    .contenedor .datos{
+        width: 100%;
+        border-radius: 3%;
+        margin-bottom: 1.5em;
+    }
+
+    .contenedor .datos .datos_img{
+        width: 10%;
+    }
+
+    .contenedor .datos .iframe_ubicacion{
+        width: 100%;
+        height: 80%;
+    }
+
+    .contenedor .formulario{
+        width: 100%;
+    }
+
+}
+
+/*Celulares Grandes*/
+@media only screen and (max-width: 520px){
+    .contenedor .datos .datos_img{
+        width: 15%;
+    }
+}
+
+/*Celulares Chicos*/
+@media only screen and (max-width: 345px){
+
+}
+
+/*Fin de configuracion responsive*/
+/*--------------------- Responsive Fin ------------------------------*/

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./assets/imagenes/iconos/La huerta.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Nunito:wght@400;700&family=Oxygen:wght@400;700&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="./assets/styles/style_header.css">
+    <link rel="stylesheet" href="./assets/styles/style_main.css">
+    <link rel="stylesheet" href="./assets/styles/style_footer.css">
+    <link rel="stylesheet" href="./assets/styles/style_ingresar.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>La Huerta</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./assets/imagenes/lahuertalogo.png" alt="logo de la huerta"></a>
+        </div>
+        <nav>
+            <ul class="nav_links">
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./productos.html">Productos</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="btn_contacto"><button>Ingresar</button></a>
+    </header>
+    <main>
+        <section class="wrapper">
+            <div class="container">
+                <div class="col-sm-8 offset-sm-2 col-lg-6 offset-lg-3 col-xl-5 offset-xl-4 text-center" id="recuadro">
+                    <form class="rounded-3 bg-light py-5 px-4 needs-validation" novalidate>
+                        <h3 class="text-black-50  fw-bolder fs-3 mb-2">Ingreso a La Huerta</h3>
+                        <div class="fw-normal text-black mb-4"> ¿No tiene usuario?
+                            <a href="#" class="text-success fw-bold text-decoration-none">Crear una nueva cuenta</a>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email" class="form-control border border-success rounded-3" id="email" placeholder="email@dominio.com" required>
+                            <label for="email">Correo electrónico</label>
+                        </div>
+                        <div class="form-floating">
+                            <input type="password" class="form-control border border-success rounded-3" id="password" placeholder="contraseña">
+                            <label for="password">Contraseña</label>
+                        </div>
+                        <div class="mt-2 text-end">
+                            <a href="#" class="text-success fw-bold text-decoration-none">¿No recuerda su contraseña?</a>
+                        </div>
+                        <button type="submit" class="btn bg-success text-white fw-bold rounded-pill submit_btn w-50 my-4">Ingresar</button>
+                    </form>
+                </div>
+            </div>
+        </section>					
+    </main>
+    <footer>
+        <section class="lista_opciones">            
+            <ul>
+                <h3>Contactanos</h3>
+                <li>
+                    <img src="./assets/imagenes/footer/telefono.png" alt="icono_telefono">
+                    <p>Telefono: (+54) 123456</p>
+                </li>
+                <li>
+                    <img src="./assets/imagenes/footer/email.png" alt="icono_correo">
+                    <p>Email: lahuertamza@gmail.com</p>
+                </li>
+                <li>
+                    <img src="./assets/imagenes/footer/ubicacion.png" alt="icono_direccion">
+                    <p>Direccion: Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                </li>
+            </ul>            
+            <ul>
+                <h3>Seguinos en </h3>
+                <li>
+                    <img src="./assets/imagenes/footer/instagram.png" alt="icono_instagram">
+                    <a href="#" target="_blank">Instagram</a>
+                </li>
+                <li>
+                    <img src="./assets/imagenes/footer/facebook.png" alt="icono_facebook">
+                    <a href="#" target="_blank">Facebook</a>
+                </li>
+                <li>
+                    <img src="./assets/imagenes/footer/twitter.png" alt="icono_twitter">
+                    <a href="#" target="_blank">Twitter</a>
+                </li>
+            </ul>
+            <ul>
+                <h3>Enlaces</h3>
+                <li>
+                    <a href="./nosotros.html">Nosotros</a>
+                </li>
+                <li>
+                    <a href="./productos.html">Productos</a>
+                </li>
+                <li>
+                    <a href="./contacto.html">Contacto</a>
+                </li>
+            </ul>      
+        </section>
+        <section class="copyright">
+            <p>&#169 Copyright Grupo19 Codo a Codo - 2022</p>
+        </section>
+    </footer>
+    
+    <!--Inicio vinculacion archivos Scripts-->
+    <script src="./assets/js/ingresar.js"></script>
+    <!--Fin vinculacion archivos Scripts-->
+</body>
+</html>
